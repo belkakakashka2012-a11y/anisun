@@ -93,7 +93,7 @@ export default async function RootLayout({
     return (
         <html lang={lang}>
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+                className={`${inter.className} antialiased`}
             >
                 <TanstackQueryProviders>
                     <ConfigsProvider configs={parsedConfigData} dictionaries={dictionaries}>
