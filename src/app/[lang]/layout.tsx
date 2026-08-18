@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { Inter } from 'next/font/google';
+const inter = Inter({ subsets: ['latin'] });
 import "./globals.css";
 import { ConfigsProvider } from "@/lib/providers/ConfigsProvider";
 import { getCookiesArray } from "@/lib/actions/cookies";
