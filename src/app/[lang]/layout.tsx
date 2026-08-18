@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ConfigsProvider } from "@/lib/providers/ConfigsProvider";
 import { getCookiesArray } from "@/lib/actions/cookies";
@@ -26,15 +25,7 @@ import UnsupportedBrowserNotify from "@/components/misc/UnsupportedBrowserNotify
 import { AnimePageLoaderProvider } from "@/lib/providers/AnimePageLoader";
 import ExtensionsLoader from "@/components/extensions/ExtensionsLoader/ExtensionsLoader";
 
-const geistSans = Geist({
-    variable: "--font-geist-sans",
-    subsets:  ["latin"],
-});
 
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
-    subsets:  ["latin"],
-});
 
 // since Next.js 15.2 `generateMetadata` doesn't block initial render
 // because metadata will be streamed into HTML
